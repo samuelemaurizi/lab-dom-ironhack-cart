@@ -1,5 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+}
+
 input {
   border: solid 1px black;
+  padding: 0.2rem;
 }
 
 .btn {
@@ -25,17 +42,73 @@ input {
 }
 
 .btn-success {
-    color: #fff;
-    background-color: #5cb85c;
-    border-color: #4cae4c;
+  color: #fff;
+  background-color: #5cb85c;
+  border-color: #4cae4c;
+  margin: 20px 0;
+}
+
+.btn-add {
+  margin: 0 25px;
 }
 
 .btn-delete {
-    color: #fff;
-    background-color: #CF000F;
-    border-color: #CF000F;
+  color: #fff;
+  background-color: #cf000f;
+  border-color: #cf000f;
 }
 
 .quantity {
   margin: 0 5px;
+}
+
+.total {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.total-price {
+  margin-left: 1rem;
+}
+
+.btn-calculate {
+  background: lightgreen;
+}
+
+.title {
+  text-align: center;
+}
+
+.product {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+.product-wrapper {
+  display: flex;
+  width: 80vw;
+  height: 10vh;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+  border-bottom: 1px solid #999;
+}
+
+.new-product-wrapper {
+  display: flex;
+  width: 80vw;
+  height: 10vh;
+  justify-content: flex-end;
+  flex-direction: row;
+  align-items: center;
+  border-bottom: 1px solid #999;
+}
+
+.item-qty {
+  display: flex;
 }
